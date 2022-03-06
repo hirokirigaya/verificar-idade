@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1280px;
   background-color: rgba(80, 135, 255, 0.815);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
 }
 
 header h1 {
@@ -21,16 +21,15 @@ header h1 {
 }
 
 .section {
+  text-align: center;
   margin: 1rem;
   padding: 1rem;
   background-color: white;
-  max-width: 1280px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   font-size: 1.275rem;
   width: 40%;
-  height: 100%;
   box-shadow: 5px 5px 5px rgba(35, 104, 255, 0.815);
 }
 
@@ -49,8 +48,17 @@ header h1 {
 .verificar:hover {
   background-color: rgba(116, 158, 248, 0.815);
 }
-
+#foto {
+  display: block;
+  margin: 0 auto;
+}
 footer p a{
   color: white;
   text-decoration: none;
+}
+
+@media(max-width: 960px) {
+  .section {
+    width: 100%;
+  }
 }
